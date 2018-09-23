@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 vote">
+      <h3>{{article.points}}
+      <br>
+      points</h3>
+    </div>
+    <div class="col-md-10">
+      <div class="row">
+        <div class="col-md-10">
+          <h3>{{article.title}}</h3>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          ({{article.link}})
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-3">
+            <h6><a href (click)="voteUp()"><span>&#8679;</span> upvote</a></h6></div>
+          <div class="col-md-3">
+            <h6><a href (click)="voteDown()"><span>&#8681;</span> Downvote</a></h6></div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+

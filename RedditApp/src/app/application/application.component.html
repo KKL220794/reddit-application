@@ -1,0 +1,20 @@
+<div class="container Cbox">
+  <h3>Add a link</h3>
+  <form>
+    <div class="form-group">
+      <label for="Title"><b>Title</b></label>
+      <input type="text" class="form-control" #title placeholder="Enter Title">
+    </div>
+    <div class="form-group">
+      <label for="link"><b>Link</b></label>
+      <input type="text" class="form-control" #link placeholder="Add link">
+    </div>
+
+    <button type="submit" class="btn btn-success" (click)="addArticle(title,link)">Submit Link</button>
+  </form>
+</div>
+<br>
+<app-article
+  *ngFor="let art of new_article"
+  [article]="art">
+</app-article>
